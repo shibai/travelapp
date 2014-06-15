@@ -18,6 +18,9 @@ $ pip install South
 reference: http://south.readthedocs.org/en/latest/installation.html
 
 Under directory travelapp/ (it contains manage.py)
+
 $ python manage.py runserver
+
 Then go to browser: localhost:8000/travelapp/api/..........
+
 travelapp/travelapp/urls.py has all available APIs
