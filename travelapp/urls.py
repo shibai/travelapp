@@ -7,9 +7,11 @@ urlpatterns = patterns('',
     url(r'^api/signup/', views.CreateUser.as_view()),
     url(r'^api/users/$', views.UsersList.as_view()),
     url(r'^api/groups/$', views.GroupsList.as_view()),
+    url(r'^api/trips/$', views.TripsList.as_view()),
     url(r'^api/newGroups/$', views.CreateGroup.as_view()),
+    url(r'^api/newTrips/$', views.CreateTrip.as_view()),
     url(r'^api/groups/(?P<pk>[0-9]+)/$', views.GroupsDetail.as_view(), name='groups-detail'),
     url(r'^api/users/(?P<pk>[0-9]+)/$', views.UsersDetail.as_view(), name='users-detail'),
-    #url(r'^api/trips/(?P<pk>[0-9]+)/$', views.TripsDetail.as_view(), name='trips-detail'),
+    url(r'^api/trips/(?P<pk>[0-9]+)/$', views.TripsDetail.as_view(),name='trips-detail'),
 )
 urlpatterns = format_suffix_patterns(urlpatterns)
